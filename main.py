@@ -69,7 +69,7 @@ def inbound_mail():
 
 @get('/')
 def setup():
-    url = request.url.replace('/setup', '/inbound_mail')
+    url = request.url.replace('/', '/inbound_mail')
     return template('This is your hook url, copy it:<h3>{{url}}</h3>', url=url)
 
 run(host='0.0.0.0', port=int(os.environ.get('PORT', 8010)))
