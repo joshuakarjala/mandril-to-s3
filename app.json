@@ -3,7 +3,7 @@
     "description": "Upload inbound Mandrill email to s3",
     "repository": "https://github.com/joshuakarjala/mandrill-to-s3",
     "keywords": ["mandrill", "s3", "email"],
-    "success_url": "/setup",
+    "success_url": "/",
     "env": {
         "AWS_ACCESS_KEY_ID": null,
         "AWS_SECRET_ACCESS_KEY": null,

@@ -67,7 +67,7 @@ def inbound_mail():
     return 'OK'
 
 
-@get('/setup')
+@get('/')
 def setup():
     url = request.url.replace('/setup', '/inbound_mail')
     return template('This is your hook url, copy it:<h3>{{url}}</h3>', url=url)
